@@ -1,0 +1,8 @@
+style "tooltips"
+{
+ bg[NORMAL] = {0xffff, 0xffff, 0xcccc}
+ bg[NORMAL] = {0xffff, 0xffff, 0xdf7d}
+}
+
+widget "gtk-tooltips" style "tooltips"
+

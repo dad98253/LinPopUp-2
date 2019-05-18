@@ -1,0 +1,643 @@
+# Russion translation of LinPopUp
+# Grigory Batalov <bga@altlinux.ru>, 2003
+msgid ""
+msgstr ""
+"Project-Id-Version: LinPopUp 2.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-09-09 23:43+0400\n"
+"PO-Revision-Date: 2003-07-01 09:46+0400\n"
+"Last-Translator: Grigory Batalov <bga@altlinux.ru>\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=KOI8-R\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/dialog.c:239
+msgid "About LinPopUp"
+msgstr "О программе"
+
+#: src/dialog.c:249
+#, c-format
+msgid "Author : Jean-Marc Jacquet"
+msgstr "Автор : Jean-Marc Jacquet"
+
+#: src/dialog.c:281 src/dialog.c:386
+msgid "Close"
+msgstr "Закрыть"
+
+#: src/dialog.c:329 src/custom.c:92 src/custom.c:99 src/send.c:83
+#: src/send.c:169 src/send.c:177 src/send.c:185 src/send.c:192 src/send.c:199
+#: src/send.c:255 src/recept.c:349
+msgid "Ok"
+msgstr ""
+
+#: src/toolbar.c:100 src/menu.c:97
+msgid "New"
+msgstr "Написать"
+
+#: src/toolbar.c:100
+msgid "Send a New Message"
+msgstr "Отправить новое сообщение"
+
+#: src/toolbar.c:101 src/menu.c:99
+msgid "Reply"
+msgstr "Ответить"
+
+#: src/toolbar.c:101
+msgid "Reply to this Message"
+msgstr "Ответить на сообщение"
+
+#: src/toolbar.c:105 src/menu.c:117
+msgid "Delete"
+msgstr "Удалить"
+
+#: src/toolbar.c:105
+msgid "Delete this Message"
+msgstr "Удалить сообщение"
+
+#: src/toolbar.c:107
+msgid "Prev."
+msgstr "Назад"
+
+#: src/toolbar.c:107
+msgid "Show Previous Message"
+msgstr "Показать предыдущее сообщение"
+
+#: src/toolbar.c:108 src/menu.c:104
+msgid "Next"
+msgstr "Вперёд"
+
+#: src/toolbar.c:108
+msgid "Show Next Message"
+msgstr "Показать следующее сообщение"
+
+#: src/toolbar.c:112
+msgid "Iconize"
+msgstr "Свернуть"
+
+#: src/toolbar.c:112
+msgid "Iconize LinPopUp"
+msgstr "Свернуть LinPopUp"
+
+#: src/custom.c:91
+#, c-format
+msgid "%s open error: %s"
+msgstr "Ошибка открытия %s: %s"
+
+#: src/custom.c:92 src/custom.c:99
+msgid "RC Save Error"
+msgstr "Ошибка сохранения настроек"
+
+#: src/custom.c:98
+#, c-format
+msgid "%s write error: %s"
+msgstr "Ошибка записи %s: %s"
+
+#: src/custom.c:118
+msgid "USER on HOST wrote :"
+msgstr "USER с HOST написал :"
+
+#: src/custom.c:300
+msgid "Preferences"
+msgstr "Настройки"
+
+#: src/custom.c:326
+msgid "Done"
+msgstr "Сохранить"
+
+#: src/custom.c:327 src/send.c:461
+msgid "Cancel"
+msgstr "Отменить"
+
+#: src/custom.c:328
+msgid "Reset"
+msgstr "Сбросить"
+
+#: src/custom.c:339
+msgid "Messages"
+msgstr "Сообщения"
+
+#: src/custom.c:344
+msgid "Check for incoming messages"
+msgstr "Проверять входящие сообщения"
+
+#: src/custom.c:353
+msgid "Every ... second(s):"
+msgstr "Каждые ... секунд(ы):"
+
+#: src/custom.c:359
+msgid "Never"
+msgstr "Никогда"
+
+#: src/custom.c:395
+msgid "Reply "
+msgstr "Ответ"
+
+#: src/custom.c:404
+msgid "Quote character:"
+msgstr "Обозначение цитаты:"
+
+#: src/custom.c:424
+msgid "Reply Header:"
+msgstr "Заголовок ответа:"
+
+#: src/custom.c:443
+msgid "Delivery address"
+msgstr "Адрес назначения"
+
+#: src/custom.c:452
+msgid "Use default host:"
+msgstr "Адрес по умолчанию:"
+
+#: src/custom.c:458
+msgid "Guess"
+msgstr "Угадывать"
+
+#: src/custom.c:464
+msgid "Leave blank"
+msgstr "Оставлять пустым"
+
+#: src/custom.c:501
+msgid "Samba Settings"
+msgstr "Настройки Самбы"
+
+#: src/custom.c:504
+msgid "Identity"
+msgstr "Идентификация"
+
+#: src/custom.c:513
+msgid "User Name:"
+msgstr "Имя пользователя:"
+
+#: src/custom.c:530
+msgid "Host Name:"
+msgstr "Имя машины:"
+
+#: src/custom.c:549
+msgid "Arguments"
+msgstr "Аргументы"
+
+#: src/custom.c:557
+msgid "Optional:"
+msgstr "Дополнительные:"
+
+#: src/custom.c:579
+msgid "General Options"
+msgstr "Общие параметры"
+
+#: src/custom.c:582
+msgid "Options"
+msgstr "Параметры"
+
+#: src/custom.c:591
+msgid "Delivery confirmation"
+msgstr "Подтверждать доставку"
+
+#: src/custom.c:598
+msgid "Read wrap-around, last message to first"
+msgstr "Читать по кругу, от последнего сообщения к первому"
+
+#: src/custom.c:605
+msgid "Copy all messages to self"
+msgstr "Посылать себе копию сообщения"
+
+#: src/custom.c:612
+msgid "Auto-iconify on last deleted message"
+msgstr "Сворачивать при удалении последнего сообщения"
+
+#: src/custom.c:619
+msgid "Beep on new message arrival"
+msgstr "Оповещать о приходе сообщения"
+
+#: src/custom.c:626
+msgid "Minimize to tray"
+msgstr "Сворачивать в трей"
+
+#: src/custom.c:634
+msgid "Toolbar"
+msgstr "Панель инструментов"
+
+#: src/custom.c:641
+msgid "Icons and text"
+msgstr "Пиктограммы и текст"
+
+#: src/custom.c:647
+msgid "Icons only"
+msgstr "Только пиктограммы"
+
+#: src/custom.c:653
+msgid "Text only"
+msgstr "Только текст"
+
+#: src/custom.c:675
+msgid "High colors icons set"
+msgstr "Полноцветный набор"
+
+#: src/custom.c:681
+msgid "16 colors icons set"
+msgstr "16-цветный набор"
+
+#: src/docs.c:43
+msgid "GNU General Public License"
+msgstr ""
+
+#: src/docs.c:43
+msgid "LinPopUp - Readme"
+msgstr ""
+
+#: src/docs.c:43
+msgid "LinPopUp - Changes"
+msgstr "LinPopUp - Изменения"
+
+#: src/docs.c:43
+msgid "LinPopUp - User's Manual"
+msgstr "LinPopUp - Руководство пользователя"
+
+#: src/main.c:240 src/recept.c:174
+msgid ""
+"\n"
+"WARNING:\n"
+"\n"
+"Due to a security hole found in Samba message command you may install Samba "
+"version >= 2.0 Beta 2 when using LinPopUp."
+msgstr ""
+"\n"
+"Внимание:\n"
+"\n"
+"Из-за ошибки безопасности в команде отправки сообщений рекомендуем совместно "
+"с LinPopUp использовать Samba версии >= 2.0 Beta 2."
+
+#. MESSAGE MENU
+#: src/menu.c:87 src/menu.c:238
+msgid "Message"
+msgstr "Сообщение"
+
+#: src/menu.c:106
+msgid "Previous"
+msgstr "Назад"
+
+#: src/menu.c:111
+msgid "Save As..."
+msgstr "Сохранить как..."
+
+#: src/menu.c:113
+msgid "Save All Messages"
+msgstr "Сохранить все"
+
+#: src/menu.c:119
+msgid "Delete All"
+msgstr "Удалить все"
+
+#: src/menu.c:123
+msgid "Quit"
+msgstr "Выйти"
+
+#. EDIT MENU
+#: src/menu.c:135 src/menu.c:262
+msgid "Edit"
+msgstr "Изменить"
+
+#: src/menu.c:144 src/menu.c:282
+msgid "Select All"
+msgstr "Выделить всё"
+
+#: src/menu.c:146
+msgid "Copy to Clipboard"
+msgstr "Копировать в буфер обмена"
+
+#: src/menu.c:151
+msgid "Preferences..."
+msgstr "Настройки..."
+
+#. WINDOW MENU
+#: src/menu.c:161
+msgid "Window"
+msgstr "Окно"
+
+#: src/menu.c:170
+msgid "Save Size"
+msgstr "Сохранить размер"
+
+#: src/menu.c:172
+msgid "Reset default Size"
+msgstr "Исходный размер"
+
+#. HELP MENU
+#: src/menu.c:179
+msgid "Help"
+msgstr "Справка"
+
+#: src/menu.c:189
+msgid "About LinPopUp..."
+msgstr "О программе..."
+
+#: src/menu.c:193
+msgid "License"
+msgstr "Лицензия"
+
+#: src/menu.c:197
+msgid "Readme"
+msgstr ""
+
+#: src/menu.c:198
+msgid "What's New"
+msgstr "Что нового"
+
+#: src/menu.c:199
+msgid "User's Manual"
+msgstr "Руководство пользователя"
+
+#: src/menu.c:200
+msgid "LinPopUp Forum"
+msgstr "Форум LinPopUp"
+
+#: src/menu.c:203
+msgid "Get Last Version"
+msgstr "Свежая версия"
+
+#: src/menu.c:248
+msgid "Load..."
+msgstr "Загрузить..."
+
+#: src/menu.c:253 src/send.c:457
+msgid "Send"
+msgstr "Отправить"
+
+#: src/menu.c:271
+msgid "Cut"
+msgstr "Вырезать"
+
+#: src/menu.c:274
+msgid "Copy"
+msgstr "Скопировать"
+
+#: src/menu.c:277
+msgid "Paste"
+msgstr "Вставить"
+
+#: src/send.c:83
+msgid " Error"
+msgstr "Ошибка"
+
+#: src/send.c:83
+msgid ""
+"\n"
+"Please enter a destination."
+msgstr ""
+"\n"
+"Укажите получателя."
+
+#: src/send.c:97
+msgid "To: "
+msgstr "Кому: "
+
+#: src/send.c:121
+msgid ""
+"\n"
+"=== TO BE CONTINUED ==="
+msgstr ""
+"\n"
+"=== Продолжение следует ==="
+
+#: src/send.c:169
+msgid ""
+"\n"
+"\n"
+"Message succesfully sent."
+msgstr ""
+"\n"
+"\n"
+"Сообщение успешно отправлено."
+
+#.
+#. * don't check for "command not found", as that message can be
+#. * different if another LANGuage is used than C / english
+#.
+#: src/send.c:177 src/send.c:185 src/send.c:192 src/send.c:199
+#: src/recept.c:349
+msgid "Error"
+msgstr "Ошибка"
+
+#: src/send.c:177
+msgid ""
+"\n"
+"`smbclient' command cannot be run;\n"
+"not installed?"
+msgstr ""
+"\n"
+"Невозможно запустить команду `smbclient';\n"
+"не установлена?"
+
+#: src/send.c:183
+#, c-format
+msgid ""
+"\n"
+"\n"
+"Unknown host : %s"
+msgstr ""
+"\n"
+"\n"
+"Неизвестная машина : %s"
+
+#: src/send.c:190
+#, c-format
+msgid ""
+"\n"
+"\n"
+"Host unreachable :\n"
+" %s"
+msgstr ""
+"\n"
+"\n"
+"Машина не отвечает :\n"
+" %s"
+
+#: src/send.c:197
+#, c-format
+msgid ""
+"\n"
+"\n"
+"%s can't receive\n"
+"winpopup messages."
+msgstr ""
+"\n"
+"\n"
+"%s не принимает\n"
+"сообщения winpopup."
+
+#: src/send.c:202
+msgid "LinPopup - smbclient output"
+msgstr "LinPopup - вывод smbclient"
+
+#: src/send.c:230
+msgid ""
+"\n"
+"A new message was entered.\n"
+"\n"
+"Cancel anyway?"
+msgstr ""
+"\n"
+"Было набрано новое сообщение.\n"
+"\n"
+"Всё равно отменить?"
+
+#: src/send.c:230 src/recept.c:322 src/recept.c:474
+msgid "Yes"
+msgstr "Да"
+
+#: src/send.c:230 src/recept.c:322 src/recept.c:474
+msgid "No"
+msgstr "Нет"
+
+#: src/send.c:254
+#, c-format
+msgid ""
+"\n"
+"Unable to Open '%s'\n"
+msgstr ""
+"\n"
+"Невозможно открыть '%s'\n"
+
+#: src/send.c:255
+msgid "File Error"
+msgstr "Ошибка файла"
+
+#: src/send.c:287
+msgid "Load Message text..."
+msgstr "Загрузить текст сообщения..."
+
+#. -- Top frame first packed to the vbox --
+#: src/send.c:443
+msgid "Send to:"
+msgstr "Кому отправить:"
+
+#: src/recept.c:58
+#, c-format
+msgid "Message #%i"
+msgstr "Сообщение #%i"
+
+#: src/recept.c:60
+msgid "No Message"
+msgstr "Сообщений нет"
+
+#: src/recept.c:66
+msgid "NEW"
+msgstr "НОВОЕ"
+
+#: src/recept.c:71
+#, c-format
+msgid "Total Messages: %i"
+msgstr "Всего сообщений: %i"
+
+#: src/recept.c:78
+#, c-format
+msgid "New: %i"
+msgstr "Новых: %i"
+
+#: src/recept.c:160
+msgid "Distributed under the terms of the GNU GPL.\n"
+msgstr "Распространяется на условиях GNU GPL.\n"
+
+#: src/recept.c:166
+#, c-format
+msgid "Samba version %s installed.\n"
+msgstr "Установлена Самба версии %s.\n"
+
+#: src/recept.c:205
+#, c-format
+msgid "Received from %s at %s, %s"
+msgstr "Получено от %s с %s, %s"
+
+#: src/recept.c:298
+#, c-format
+msgid ""
+"FROM : %s ON %s\n"
+"TO   : %s\n"
+"DATE : %s\n"
+"---\n"
+"\n"
+"%s\n"
+"=== END OF MESSAGE ===\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+msgstr ""
+"ОТ : %s С %s\n"
+"КОМУ   : %s\n"
+"ДАТА : %s\n"
+"---\n"
+"\n"
+"%s\n"
+"=== Конец сообщения ===\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+
+#: src/recept.c:321
+#, c-format
+msgid ""
+"\n"
+" %s already exists\n"
+"Erase it anyway ?"
+msgstr ""
+"\n"
+" %s уже существует\n"
+"Переписать всё равно?"
+
+#: src/recept.c:322
+msgid "Confirmation box"
+msgstr "Подтверждение"
+
+#: src/recept.c:332
+#, c-format
+msgid "LINPOPUP MESSAGE #%i \n"
+msgstr "Сообщение LINPOPUP #%i \n"
+
+#: src/recept.c:339
+msgid "LINPOPUP MESSAGE\n"
+msgstr "Сообщение LINPOPUP\n"
+
+#: src/recept.c:348
+#, c-format
+msgid ""
+"\n"
+"Can not write %s!"
+msgstr ""
+"\n"
+"Невозможно записать %s!"
+
+#: src/recept.c:377
+msgid "Save Message..."
+msgstr "Сохранить сообщение..."
+
+#: src/recept.c:474
+msgid "Confirm for deletion"
+msgstr "Подтверждение удаления"
+
+#: src/recept.c:474
+msgid ""
+"\n"
+"Do you really want\n"
+"delete ALL messages?"
+msgstr ""
+"\n"
+"Вы действительно хотите\n"
+"удалить ВСЕ сообщения?"
+
+#: src/version.c:39
+#, c-format
+msgid ""
+"LINPOPUP V%s - (c)LittleIgloo.org 1998-%s.\n"
+"Compiled by %s on %s the %s at %s,\n"
+"Using %s and %s."
+msgstr ""
+"LINPOPUP V%s - (c)LittleIgloo.org 1998-%s.\n"
+"Скомпилировано %s на %s %s в %s,\n"
+"С использованием %s и %s."
+
+#~ msgid "Deiconify"
+#~ msgstr "Развернуть"

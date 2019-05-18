@@ -1,0 +1,53 @@
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(configure.in)
+AM_INIT_AUTOMAKE(linpopup, 2.1.0)
+AM_CONFIG_HEADER(config.h)
+dnl AM_MAINTAINER_MODE
+
+AC_ISC_POSIX
+AC_PROG_CC
+AM_PROG_CC_STDC
+AC_HEADER_STDC
+
+pkg_modules="gtk+-2.0 >= 2.0.0"
+PKG_CHECK_MODULES(PACKAGE, [$pkg_modules])
+AC_SUBST(PACKAGE_CFLAGS)
+AC_SUBST(PACKAGE_LIBS)
+
+GETTEXT_PACKAGE=linpopup
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",1)
+
+dnl Add the languages which your application supports here.
+ALL_LINGUAS="ru de fr nl"
+AM_GLIB_GNU_GETTEXT
+
+AC_DEFINE_UNQUOTED([PROG_NAME],["$PROGNAME"],[moved from src/version.h])
+AUTHORS=`perl -e 'while($a=<>){chomp $a;push @a,$a;};print join(", ",@a);' $srcdir/AUTHORS`
+AC_DEFINE_UNQUOTED([PROG_AUTHOR],["$AUTHORS"],[moved from src/version.h])
+AC_DEFINE_UNQUOTED([PROG_VERSION],["$VERSION"],[moved from src/version.h])
+AC_DEFINE_UNQUOTED([VERSION_DATE],["2007"],[moved from src/version.h])
+COMPILE_DATE=`date +%D`
+AC_DEFINE_UNQUOTED([COMPILE_DATE],["$COMPILE_DATE"],[moved from src/version.h])
+COMPILE_TIME=`date +%T`
+AC_DEFINE_UNQUOTED([COMPILE_TIME],["$COMPILE_TIME"],[moved from src/version.h])
+COMPILE_BY=`whoami`
+AC_DEFINE_UNQUOTED([COMPILE_BY],["$COMPILE_BY"],[moved from src/version.h])
+COMPILE_HOST=`hostname`
+AC_DEFINE_UNQUOTED([COMPILE_HOST],["$COMPILE_HOST"],[moved from src/version.h])
+GTK_VERSION=`pkg-config --modversion gtk+-2.0`
+AC_DEFINE_UNQUOTED([GTK_VERSION],["$GTK_VERSION"],[moved from src/version.h])
+CC_VERSION=`$CC -v 2>&1 | tail -1`
+AC_DEFINE_UNQUOTED([CC_VERSION],["$CC_VERSION"],[moved from src/version.h])
+CODE_LINES=`find $srcdir -name '*.c' -o -name '*.h' -exec cat {} \; | grep -ch -e '[[[:alpha:]|[:punct:]]]'` # [[ -> [, ]] -> ]
+AC_DEFINE_UNQUOTED([CODE_LINES],[$CODE_LINES],[moved from src/version.h])
+
+AC_OUTPUT([
+Makefile
+extra/Makefile
+man/Makefile
+pixmaps/Makefile
+po/Makefile.in
+src/Makefile
+])

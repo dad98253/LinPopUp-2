@@ -1,0 +1,12 @@
+# List of source files containing translatable strings.
+
+src/io.c
+src/dialog.c
+src/toolbar.c
+src/custom.c
+src/docs.c
+src/main.c
+src/menu.c
+src/send.c
+src/recept.c
+src/version.c

@@ -1,0 +1,573 @@
+LINPOPUP - CHANGES HISTORY
+==========================
+
+v2.1.0 09-SEP-2007
+
+- new developer: Roman Rybalko <romanr_rybalko@users.sf.net>
+- Iconify to system tray (using Anders Carlsson <andersca@gnu.org>'s eggtrayicon code)
+
+
+
+
+v2.0.7 01-SEP-2005
+------------------
+
+- Dutch translation was added
+  (thanks to Roy Spliet)
+
+
+
+
+v2.0.6 24-MAY-2005
+------------------
+
+- French translation was added
+  (thanks to Blue Duck)
+
+
+
+
+v2.0.5 19-JAN-2005
+------------------
+
+- Buffer overflow in string.c:strexpand() was discovered
+  and several Security Advisories were initiated
+  (CAN-2004-1282 / DSA-632-1 / etc.) This release tries
+  to close them and prevent similar issues by replacing
+  unsafe string function calls with safe analogs.
+
+  Thanks to:
+      o Stephen Dranger - bug hunter
+      o Paul Slootman (Debian) - first patch author
+
+
+
+
+v2.0.4 16-NOV-2004
+------------------
+
+- German translation added
+  (thanks to Tobias Jordan)
+
+
+
+
+v2.0.3 14-NOV-2003
+------------------
+
+- Changed samba_info() to be compatible with Samba3 syntax
+  (thanks to Daniele Dorigo and Cesar Romero Zanabria)
+
+
+
+
+v2.0.2 17-AUG-2003
+------------------
+
+- Many makefile bugs fixed
+  (thanks to Mark R. Pariente and Buchan Milne)
+
+
+
+
+v2.0.1 01-JUL-2003
+------------------
+
+- Temporary file handling reworked
+
+- Forgotten hostname UTF8-converting added
+
+- File and folder names lowercased (to "linpopup")
+
+
+
+
+v2.0.0 11-JUN-2003
+-------------------
+
+- Opened project LinPopUp-2 at Sourceforge.net
+
+- From http://w1.894.telia.com/~u89404340/linpopup/
+  ( Peter Osterlund and Slavek Banko ):
+
+      o Beep on new message arrival (configurable)
+
+      o Enlarging the help windows corrected
+
+      o Added some menu accelerator keys
+
+      o Input focus to text in "Send message" dialog
+
+      o Convert character code 0x14 to \n in incoming messages
+
+
+
+
+v1.2.0b 08-MAY-2003
+--------------------
+
+- Preferences dialog rewritten from scratch
+
+
+
+
+v1.2.0a 06-MAY-2003
+--------------------
+
+- GTK+2 port, not became next version yet
+
+- Also translation support added and ru.po made
+
+
+
+
+v1.2.0 14-MAR-2000
+-------------------
+
+- Tested against GTK+ 1.2.7
+
+- Automatically gives to the send window
+  the size of the main window.
+
+- Applied a memory optimization patch
+  contributed by Francois Petitjean.	
+
+- Added a patch to detect if smbclient is not available
+  contibuted by Paul Slootman.
+
+- Added a missing g_free() pointed by the same Paul.
+
+	
+	
+
+v1.1.1 27-OCT-1999
+------------------
+
+- Added support for GTK+ 1.2.5 & 1.2.6
+
+- Added in main menu 
+    "Window" -> "Save Size"
+    "Window" -> "Reset Default Size"
+
+- Little fixe to the RPM package to create the
+  messages data file on first install.
+
+
+- ( All the work below was -- once again :) -- done by 
+    Karl Kleinpaste <karl@justresearch.com> )
+
+    o It's now possible to turn ON/OFF
+    wrap around when pressing Next/Prev. message
+    ("Preferences"->"General Options"->"Read wrap-around...")
+ 
+    o Corrected "OptionNal" typo in "Preferences"->"Samba settings"   
+
+
+
+v1.1.0 08-SEP-1999
+------------------
+
+- Added support for GTK+ 1.2.4
+
+- Make it possible to reduce both
+  Main window and Send window size.
+
+- Reorganized the Preferences notebook.
+
+   
+- ( All the work below was done by 
+    Karl Kleinpaste <karl@justresearch.com> )
+
+      o Added the ability to send a message to 
+        multiple recipients: The "Send to" input
+	field now accept a comma-separated list of hosts
+	to wich send a message.	
+
+      o Added the ability to disable the
+        "message successfully sent" popup.
+        ("Preferences"->"General Options"->"Delivery confirmation")
+
+      o Added the ability to disable auto-iconify on 
+        last message deletion.
+        ("Preferences"->"General Options"->"Auto-iconify ...")
+      
+      o Added the ability to copy all messages to self. 
+        ("Preferences"->"General Options"->"Copy all messages ...")
+
+      o Fixed typo of "Optional" in custom.c	
+      
+      o Cut initial hostname length at leftmost `.'
+      
+      
+
+v1.0.2 14-JUN-1999
+------------------
+
+- Fixed a segfault occuring when about window xpm
+  was not found.
+
+- Added "Help" -> "LinPopUp Forum" submenu.
+
+- Little changes to the Little Igloo Banner.
+  
+- New debian package available.
+
+
+v1.0.1 21-MAY-1999
+------------------
+
+- Added support for GTK+ 1.2.3
+
+
+v1.0.0 10-MAY-1999
+------------------
+
+- No more bug reports since a long time :)
+  So, let's say this is a "stable" version.
+
+- Added support for GTK+ 1.2.2
+
+- Some fixes to the menu key accelerators.
+
+- Updated INSTALL and README files.
+
+
+v0.9.9 10-MAR-1999
+------------------
+
+- Added support for GTK+ 1.2.0 wich is the new
+  *STABLE* GTK+ libs version.
+  
+- Removed all code refering to GTK+ 1.0.x
+
+- Made the send window resizable.
+
+- This would be the last BETA version. So, please,
+  consider to report any bug you could find.      
+
+
+v0.9.8 12-FEB-1999
+------------------
+
+- The long promised combo box in the send window is here.
+
+- Some fixes to the functions that display new messages
+  [ contributed by Andreas Kainz <aka@gams.at> ]    
+
+- Some locking added around all file operations on the messages.dat file
+  [ contributed by  Andreas Kainz <aka@gams.at> ]    
+
+- LinPopUp will now minimise itself when the last message is
+  deleted [ suggested by Richard Dawe <richdawe@bigfoot.com> ]
+
+- Well, saying that LinPopUp "compiles perfectly on Solaris 2.6"
+  doesn't mean that it runs perfectly on Solaris ;)
+  [ fpetitje@bureauveritas.com repported that v0.9.7 crash at
+    start-up on Solaris 2.5 ]
+
+- LinPopUp will no more say that Samba is not installed when it
+  can't run smbstatus.
+
+- Extra files ( like gtkrc or  pixmaps ) are now stored in 
+  /usr/local/share/LinPopUp or /usr/share/LinPopUp
+  So, if you upgrade from a previous version you can delete
+  all files in /var/lib/linpopup excepting "messages.dat"
+
+
+v0.9.7 25-JAN-1999
+------------------
+
+- Fixed broken compatibility with GTK+ 1.0.x that was 
+  introduced in last release.
+
+- LinPopUp was reported to 
+  "compiles perfectly on Solaris 2.6 for SPARC and x86"
+  [Thanks to Steve ?????]
+	
+
+v0.9.6 08-JAN-1999
+-------------------
+
+- Added support for GTK+ 1.1.7 -> 1.1.12
+  *** this does NOT include  GTK+ 1.1.8 or 1.1.9 ***
+
+- Added support for Gtk Themes. 
+  ( Linpopup will search for a gtkrc file in /var/lib/linpopup/misc
+   if it can't found it, then look for ~/.gtkrc )
+
+- Child dialogs are now transient
+  [ Thanks to Brent Verner ]
+   
+- A lot of code/memory clean-up/optimization. 
+ 
+- Added interaction with Netscape Browser which
+  will lead, at term, to include HTML docs/FAQ
+
+- Many bug fixes.
+  
+- Some cosmetic changes.
+
+- Changed my email to <jm@littleigloo.org>
+  and Little Igloo URL to : http://www.LittleIgloo.org
+
+
+v0.9.5 25-NOV-1998
+------------------
+
+- WARNING :
+  Due to a security hole found in Samba message command you may
+  install Samba version >= 2.0 Beta 2 when using LinPopUp.
+
+- Samba version is now checked at start up time. So, if you
+  use versions 1.1X.X you will get the above message.
+  (It will only be shown once)
+
+- Added the "Host can't receive winpopup message" error 
+  message that you will get when trying to send a message
+  to a Linux host that doesn't use Samba or doesn't have
+  the message command enabled in its smb.conf
+
+- Yet more customization ...
+  Added a "Samba Settings" tab in the preferences dialog
+  box. Here you can set the username as the netbios name
+  (your hostname) which will be displayed as the FROM
+  part of your message. You can also indicate some
+  uncomon arguments that you want to be passed to samba.
+  
+- A little fix made to the user's preference management
+  functions to avoid to have your settings cleared when
+  upgrading to a newer version of linpopup.
+               
+- Reseting the defaults will no more close the preferences
+  dialog box.
+
+- Color fix in preferences dialog box.
+
+- Review the way of displaying incoming messages.
+  (Message header is no more included in the text body)    
+
+- GTK+ 1.1.x support now include accelerators.
+  (new GTK+ version 1.1.5 full support)
+
+- little code clean-up.
+ 
+- Linpopup growed from 2408 to 2536 lines of code.
+
+
+v0.9.4 04-NOV-1998
+------------------
+
+- Binaires as sources RPM (RedHat packages)
+  are now available on http://www.chez.com/littleigloo
+
+- Messages are now timestamped, 
+  the date of a message is now displayed after
+  the sender and sender's host information.
+  NOTE: because of this the format of the
+  file were messages are kept have changed.
+  So old messages files are not compatible with
+  the new one.
+
+- As the messages file format have changed,
+  this is the occasion to move it to a more appropriate
+  location. So messages are now kept in :
+  /var/lib/linpopup/messages.dat
+  (old location was /tmp/linpopup.dat)
+
+- Added "Save as" and "Save All" submenus
+  in the "Message" menu. In this way a message
+  or all messages can be saved in a human readable
+  form ( an ASCII text file ). 
+
+- Added support for GTK+ 1.1.x 
+  Linpopup will now compile and run fine with
+  GTK+ 1.1.x series. 
+
+- The static executable included in the binairy
+  distribution is now linked with GTK+ v1.0.5
+  BTW, is only required to compile the sources 
+  and run the dynamic executable GTK+ >=1.0.4
+  
+- Some fix to the minimize function. Linpopup
+  will now correctly minimize when launched with
+  the -min arg via .xinitrc or .Xclients.
+  (will no more confuse window managers)     
+
+- A Linpopup man page is now available.
+
+- Made some changes to the help menu.
+
+- Default Compilator flags are now :
+  -Wall -O2 -fno-strenght-reduce
+  If you want change that set CFLAGS at compile time
+  i.e : make CFLAGS="-O2 -m486"  
+
+- Updated/corrected the INSTALL file.
+
+- Added a -info switch to make linpopup
+  display some system information that
+  may be useful when something goes wrong.
+
+- Made it display a rude message when
+  invoked with the -help argument.
+
+- Fixed a little bug introduced in v0.9.3
+  that resulted in a missing new line at
+  the end of a the quoted part of a reply msg.
+
+- Linpopup is now a little bit more colored.
+
+- New changes made to the Makefile.
+  
+
+v0.9.3 20-SEPT-1998
+-------------------
+
+- MAJOR CHANGE: Message > 1600 bytes are now
+  fully  supported. Possibility added to send them
+  in several parts.
+
+- MAJOR CHANGE: fixed a bug due to special
+  characters in a HOSTNAME (by example JOHN'S COMPUTER
+  where the ' was responsable of non delivered msg)
+  (thanks to Edward Rudd)
+  By the same occasion change the way to send messages
+  (using now a temp file rather than a string) to
+  avoid this kind of problems regarding the message text.     
+      
+- ABSOLUTELY No more garbage in the statusbar.
+  Hope this is true this time...
+
+- Added "Message" menu in the
+  send window with submenus:
+  "Load" and "send". So,it's
+  now possible to load a text file
+  and send it.
+  
+- Added "Edit" menu in the
+  send window with submenus:
+  "cut", "copy", "paste",
+  "select all", for operations
+  with the clipboard.   
+  
+- Due to Paul Slootman <paul@debian.org> 
+  Debian package is now available.
+
+- A little bit code Clean-Up initiated by the same Paul.
+  Added some missing #INCLUDE or #DEFINE, 
+  updated some comments. 
+      
+- Makefile clean-up/optimization done by Paul.
+
+
+
+v0.9.2 12-SEPT-1998
+-------------------
+
+- ABSOLUTELY No more garbage in the statusbar...
+
+- Yet more customization ...
+  Added a "Messages" tab in the preferences dialog
+  box. Here you can set the interval at
+  which linpopup will check for new incoming 
+  messages. You can even choose to never
+  check for incoming messages.  
+
+- Changed the default quote character
+  from '>' to '|'. Added a possibility to
+  define a personnal quote character in the
+  preferences dialog box.
+
+- Added the possibility to define a personnal
+  reply header (i.e. the sentence "USER on HOST
+  wrote :")     
+
+- Quoting of a message was extended to the two
+  first lines for more readibility.     
+
+- First try to guess the deliver adress of
+  a new message. Possibilities added in the 
+  preferences dialog box to desactivate this, or
+  to choose to always send new messages to a 
+  selected host (particulary usefull if you are 
+  only connected to one machine).    
+
+- Added a "Reset Defaults" button in the preference
+  dialog box.    
+
+- Minor fix to the minimize function. Linpopup
+  will now iconify itself if launched with the
+  -min argument and if there is no new message.   
+
+
+
+v0.9.1 23-AUG-1998
+------------------
+
+- MAJOR CHANGE : Review entirely the way
+  to capture incoming messages. This will avoid
+  some problems when running Linpopup with no
+  root access privileges (like receive indefinitely
+  the same message). And increase by the same occasion
+  the speed of processing new messages.
+ 
+- No more garbage in the main window status-bar.
+
+- Added the "Reply" function, with automatic
+  quoting of original message. ( Appears in the
+  message menu and as a new toolbar's icon ).      
+ 
+- Added the Edit menu in the main window,
+  with "Select All"
+       "Copy to clipboard"
+  and  "Preferences" 
+  sub-menus. 
+
+- On the way of user customization,
+  and the first step is the Toolbar Properties
+  that can now be customized in the preferences window.
+  (Preferences are stored in a .linpopuprc file created
+  in the user home directory)  
+
+- Modified some icons, principally to make them share
+  the same 256  colors palette. 
+  Added a set of 16 colors icons for users with 256 
+  colors depth display. 16 colors icons may be enabled
+  in the new "preferences" dialog box. 
+
+- Added the "Unreachable Host" error message.
+
+- The "Help"->"About Linpopup" dialog box was relooked.
+
+- Changed the text of the default message displayed
+  when there is no message. 
+
+- Changed the label "Send" in the message
+  menu by "New". BTW the function is the same.
+
+- Clean-Up some code.
+
+- The INSTALL file was ported to correct English
+  by Mark Veinot. After he removed all spelling and
+  grammar errors (not so many in fact),
+  I added some new ones.
+
+- Added the THANKS files in the distribution
+  where are listed major contributors, bug
+  reporters, and some others.
+
+- Modified in consequence the Makefile,
+  as some little other things in it.
+
+- Removed the prebuild binarie from the
+  source distribution.
+
+- Updated the CHANGES & TODO files ;)
+
+
+
+v0.9.0 5-AUG-1998
+-----------------
+  First beta release.
+  So, no changes. 
+

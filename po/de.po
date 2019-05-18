@@ -1,0 +1,643 @@
+# German translation for LinPopUp
+# Tobias Jordan <knilch@sf.net>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: LinPopUp\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-09-09 23:43+0400\n"
+"PO-Revision-Date: 2004-10-28 22:57+0100\n"
+"Last-Translator: Tobias 'knilch' Jordan <knilch@users.sourceforge.net>\n"
+"Language-Team: GERMAN <knilch@users.sf.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+
+#: src/dialog.c:239
+msgid "About LinPopUp"
+msgstr "Über LinPopUp"
+
+#: src/dialog.c:249
+#, c-format
+msgid "Author : Jean-Marc Jacquet"
+msgstr "Autor: Jean-Marc Jacquet"
+
+#: src/dialog.c:281 src/dialog.c:386
+msgid "Close"
+msgstr "Schliessen"
+
+#: src/dialog.c:329 src/custom.c:92 src/custom.c:99 src/send.c:83
+#: src/send.c:169 src/send.c:177 src/send.c:185 src/send.c:192 src/send.c:199
+#: src/send.c:255 src/recept.c:349
+msgid "Ok"
+msgstr "Ok"
+
+#: src/toolbar.c:100 src/menu.c:97
+msgid "New"
+msgstr "Neu"
+
+#: src/toolbar.c:100
+msgid "Send a New Message"
+msgstr "Neue Nachricht versenden"
+
+#: src/toolbar.c:101 src/menu.c:99
+msgid "Reply"
+msgstr "Antworten"
+
+#: src/toolbar.c:101
+msgid "Reply to this Message"
+msgstr "Diese Nachricht beantworten"
+
+#: src/toolbar.c:105 src/menu.c:117
+msgid "Delete"
+msgstr "Löschen"
+
+#: src/toolbar.c:105
+msgid "Delete this Message"
+msgstr "Diese Nachricht löschen"
+
+#: src/toolbar.c:107
+msgid "Prev."
+msgstr "Vorherige"
+
+#: src/toolbar.c:107
+msgid "Show Previous Message"
+msgstr "Vorherige Nachricht anzeigen"
+
+#: src/toolbar.c:108 src/menu.c:104
+msgid "Next"
+msgstr "Nächste"
+
+#: src/toolbar.c:108
+msgid "Show Next Message"
+msgstr "Nächste Nachricht anzeigen"
+
+#: src/toolbar.c:112
+msgid "Iconize"
+msgstr "Icon"
+
+#: src/toolbar.c:112
+msgid "Iconize LinPopUp"
+msgstr "LinPopUp zum Icon verkleinern"
+
+#: src/custom.c:91
+#, c-format
+msgid "%s open error: %s"
+msgstr "%s Fehler beim Öffnen: %s"
+
+#: src/custom.c:92 src/custom.c:99
+msgid "RC Save Error"
+msgstr "RC Speicherfehler"
+
+#: src/custom.c:98
+#, c-format
+msgid "%s write error: %s"
+msgstr "%s Fehler beim Schreiben: %s"
+
+#: src/custom.c:118
+msgid "USER on HOST wrote :"
+msgstr "USER auf HOST schrieb:"
+
+#: src/custom.c:300
+msgid "Preferences"
+msgstr "Einstellungen"
+
+#: src/custom.c:326
+msgid "Done"
+msgstr "Fertig"
+
+#: src/custom.c:327 src/send.c:461
+msgid "Cancel"
+msgstr "Abbruch"
+
+#: src/custom.c:328
+msgid "Reset"
+msgstr "Reset"
+
+#: src/custom.c:339
+msgid "Messages"
+msgstr "Nachrichten"
+
+#: src/custom.c:344
+msgid "Check for incoming messages"
+msgstr "Eingehende Nachrichten abrufen"
+
+#: src/custom.c:353
+msgid "Every ... second(s):"
+msgstr "Alle ... Sekunden:"
+
+#: src/custom.c:359
+msgid "Never"
+msgstr "Nie"
+
+#: src/custom.c:395
+msgid "Reply "
+msgstr "Antworten"
+
+#: src/custom.c:404
+msgid "Quote character:"
+msgstr "Zitatzeichen"
+
+#: src/custom.c:424
+msgid "Reply Header:"
+msgstr "Antwortkopf:"
+
+#: src/custom.c:443
+msgid "Delivery address"
+msgstr "Zieladresse"
+
+#: src/custom.c:452
+msgid "Use default host:"
+msgstr "Standardrechner:"
+
+#: src/custom.c:458
+msgid "Guess"
+msgstr "Raten"
+
+#: src/custom.c:464
+msgid "Leave blank"
+msgstr "Leerlassen"
+
+#: src/custom.c:501
+msgid "Samba Settings"
+msgstr "Samba Einstellungen"
+
+#: src/custom.c:504
+msgid "Identity"
+msgstr "Identität"
+
+#: src/custom.c:513
+msgid "User Name:"
+msgstr "Benutzername:"
+
+#: src/custom.c:530
+msgid "Host Name:"
+msgstr "Rechnername:"
+
+#: src/custom.c:549
+msgid "Arguments"
+msgstr "Argumente"
+
+#: src/custom.c:557
+msgid "Optional:"
+msgstr "Optional:"
+
+#: src/custom.c:579
+msgid "General Options"
+msgstr "Allgemeine Optionen"
+
+#: src/custom.c:582
+msgid "Options"
+msgstr "Optionen"
+
+#: src/custom.c:591
+msgid "Delivery confirmation"
+msgstr "Zustellbestätigung"
+
+#: src/custom.c:598
+msgid "Read wrap-around, last message to first"
+msgstr "Durchgehend von der ersten zur letzten Nachricht lesen"
+
+#: src/custom.c:605
+msgid "Copy all messages to self"
+msgstr "Kopie von jeder Nachricht an mich selbst"
+
+#: src/custom.c:612
+msgid "Auto-iconify on last deleted message"
+msgstr "nach Löschen der letzten Nachricht automatisch Verkleinern"
+
+#: src/custom.c:619
+msgid "Beep on new message arrival"
+msgstr "Bei Nachrichteneingang piepsen"
+
+#: src/custom.c:626
+msgid "Minimize to tray"
+msgstr ""
+
+#: src/custom.c:634
+msgid "Toolbar"
+msgstr "Werkzeugleiste"
+
+#: src/custom.c:641
+msgid "Icons and text"
+msgstr "Icons und Text"
+
+#: src/custom.c:647
+msgid "Icons only"
+msgstr "Nur Icons"
+
+#: src/custom.c:653
+msgid "Text only"
+msgstr "Nur Text"
+
+#: src/custom.c:675
+msgid "High colors icons set"
+msgstr "'High Color' Icons"
+
+#: src/custom.c:681
+msgid "16 colors icons set"
+msgstr "16 Farben Icons"
+
+#: src/docs.c:43
+msgid "GNU General Public License"
+msgstr "GNU General Public License"
+
+#: src/docs.c:43
+msgid "LinPopUp - Readme"
+msgstr "LinPopUp - Liesmich"
+
+#: src/docs.c:43
+msgid "LinPopUp - Changes"
+msgstr "LinPopUp - Änderungen"
+
+#: src/docs.c:43
+msgid "LinPopUp - User's Manual"
+msgstr "LinPopUp - Bedienungsanleitung"
+
+#: src/main.c:240 src/recept.c:174
+msgid ""
+"\n"
+"WARNING:\n"
+"\n"
+"Due to a security hole found in Samba message command you may install Samba "
+"version >= 2.0 Beta 2 when using LinPopUp."
+msgstr ""
+"\n"
+"WARNUNG:\n"
+"\n"
+"Wegen eines Sicherheitsloches im Samba-Paket sollten Sie eine Samba Version "
+">= 2.0 Beta 2 verwenden, wenn Sie LinPopUp benutzen möchten."
+
+#. MESSAGE MENU
+#: src/menu.c:87 src/menu.c:238
+msgid "Message"
+msgstr "Nachricht"
+
+#: src/menu.c:106
+msgid "Previous"
+msgstr "Vorherige"
+
+#: src/menu.c:111
+msgid "Save As..."
+msgstr "Speichern als..."
+
+#: src/menu.c:113
+msgid "Save All Messages"
+msgstr "Alle Nachrichten speichern"
+
+#: src/menu.c:119
+msgid "Delete All"
+msgstr "Alles löschen"
+
+#: src/menu.c:123
+msgid "Quit"
+msgstr "Beenden"
+
+#. EDIT MENU
+#: src/menu.c:135 src/menu.c:262
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: src/menu.c:144 src/menu.c:282
+msgid "Select All"
+msgstr "Alles markieren"
+
+#: src/menu.c:146
+msgid "Copy to Clipboard"
+msgstr "In die Zwischenablage"
+
+#: src/menu.c:151
+msgid "Preferences..."
+msgstr "Einstellungen..."
+
+#. WINDOW MENU
+#: src/menu.c:161
+msgid "Window"
+msgstr "Fenster"
+
+#: src/menu.c:170
+msgid "Save Size"
+msgstr "Grösse speichern"
+
+#: src/menu.c:172
+msgid "Reset default Size"
+msgstr "Standardgrösse"
+
+#. HELP MENU
+#: src/menu.c:179
+msgid "Help"
+msgstr "Hilfe"
+
+#: src/menu.c:189
+msgid "About LinPopUp..."
+msgstr "Über LinPopUp..."
+
+#: src/menu.c:193
+msgid "License"
+msgstr "Lizenz"
+
+#: src/menu.c:197
+msgid "Readme"
+msgstr "Liesmich"
+
+#: src/menu.c:198
+msgid "What's New"
+msgstr "Neuigkeiten"
+
+#: src/menu.c:199
+msgid "User's Manual"
+msgstr "Bedienungsanleitung"
+
+#: src/menu.c:200
+msgid "LinPopUp Forum"
+msgstr "LinPopUp Forum"
+
+#: src/menu.c:203
+msgid "Get Last Version"
+msgstr "Neuste Version holen"
+
+#: src/menu.c:248
+msgid "Load..."
+msgstr "Laden..."
+
+#: src/menu.c:253 src/send.c:457
+msgid "Send"
+msgstr "Senden"
+
+#: src/menu.c:271
+msgid "Cut"
+msgstr "Ausschneiden"
+
+#: src/menu.c:274
+msgid "Copy"
+msgstr "Kopieren"
+
+#: src/menu.c:277
+msgid "Paste"
+msgstr "Einfügen"
+
+#: src/send.c:83
+msgid " Error"
+msgstr "Fehler"
+
+#: src/send.c:83
+msgid ""
+"\n"
+"Please enter a destination."
+msgstr ""
+"\n"
+"Bitte ein Ziel angeben."
+
+#: src/send.c:97
+msgid "To: "
+msgstr "An: "
+
+#: src/send.c:121
+msgid ""
+"\n"
+"=== TO BE CONTINUED ==="
+msgstr ""
+"\n"
+"=== FORTSETZUNG FOLGT ==="
+
+#: src/send.c:169
+msgid ""
+"\n"
+"\n"
+"Message succesfully sent."
+msgstr ""
+"\n"
+"\n"
+"Nachricht erfolgreich versandt."
+
+#.
+#. * don't check for "command not found", as that message can be
+#. * different if another LANGuage is used than C / english
+#.
+#: src/send.c:177 src/send.c:185 src/send.c:192 src/send.c:199
+#: src/recept.c:349
+msgid "Error"
+msgstr "Fehler"
+
+#: src/send.c:177
+msgid ""
+"\n"
+"`smbclient' command cannot be run;\n"
+"not installed?"
+msgstr ""
+"\n"
+"`smbclient' Kommando kann nicht ausgeführt werden;\n"
+"ist es richtig installiert?"
+
+#: src/send.c:183
+#, c-format
+msgid ""
+"\n"
+"\n"
+"Unknown host : %s"
+msgstr ""
+"\n"
+"\n"
+"Unbekannter Rechner: %s"
+
+#: src/send.c:190
+#, c-format
+msgid ""
+"\n"
+"\n"
+"Host unreachable :\n"
+" %s"
+msgstr ""
+"\n"
+"\n"
+"Rechner nicht erreichbar:\n"
+" %s"
+
+#: src/send.c:197
+#, c-format
+msgid ""
+"\n"
+"\n"
+"%s can't receive\n"
+"winpopup messages."
+msgstr ""
+"\n"
+"\n"
+"%s kann keine\n"
+"winpopup-Nachrichten empfangen."
+
+#: src/send.c:202
+msgid "LinPopup - smbclient output"
+msgstr "LinPopup - smbclient Ausgabe"
+
+#: src/send.c:230
+msgid ""
+"\n"
+"A new message was entered.\n"
+"\n"
+"Cancel anyway?"
+msgstr ""
+"\n"
+"Eine neue Nachricht wurde erstellt.\n"
+"\n"
+"Bearbeitung abbrechen?"
+
+#: src/send.c:230 src/recept.c:322 src/recept.c:474
+msgid "Yes"
+msgstr "Ja"
+
+#: src/send.c:230 src/recept.c:322 src/recept.c:474
+msgid "No"
+msgstr "Nein"
+
+#: src/send.c:254
+#, c-format
+msgid ""
+"\n"
+"Unable to Open '%s'\n"
+msgstr ""
+"\n"
+"Kann '%s' nicht öffnen\n"
+
+#: src/send.c:255
+msgid "File Error"
+msgstr "Dateifehler"
+
+#: src/send.c:287
+msgid "Load Message text..."
+msgstr "Lade Nachrichtentext..."
+
+#. -- Top frame first packed to the vbox --
+#: src/send.c:443
+msgid "Send to:"
+msgstr "Senden an:"
+
+#: src/recept.c:58
+#, c-format
+msgid "Message #%i"
+msgstr "Nachricht #%i"
+
+#: src/recept.c:60
+msgid "No Message"
+msgstr "Keine Nachricht"
+
+#: src/recept.c:66
+msgid "NEW"
+msgstr "NEU"
+
+#: src/recept.c:71
+#, c-format
+msgid "Total Messages: %i"
+msgstr "Gesamt: %i Nachrichten"
+
+#: src/recept.c:78
+#, c-format
+msgid "New: %i"
+msgstr "Neu: %i"
+
+#: src/recept.c:160
+msgid "Distributed under the terms of the GNU GPL.\n"
+msgstr "Verbreitung nach den Regelungen der GNU GPL.\n"
+
+#: src/recept.c:166
+#, c-format
+msgid "Samba version %s installed.\n"
+msgstr "Samba Version %s gefunden.\n"
+
+#: src/recept.c:205
+#, c-format
+msgid "Received from %s at %s, %s"
+msgstr "Empfangen von %s um %s, %s"
+
+#: src/recept.c:298
+#, c-format
+msgid ""
+"FROM : %s ON %s\n"
+"TO   : %s\n"
+"DATE : %s\n"
+"---\n"
+"\n"
+"%s\n"
+"=== END OF MESSAGE ===\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+msgstr ""
+"VON  : %s AUF %s\n"
+"AN   : %s\n"
+"DATUM: %s\n"
+"---\n"
+"\n"
+"%s\n"
+"=== ENDE DER NACHRICHT ===\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+
+#: src/recept.c:321
+#, c-format
+msgid ""
+"\n"
+" %s already exists\n"
+"Erase it anyway ?"
+msgstr ""
+"\n"
+" %s existiert bereits.\n"
+"Überschreiben?"
+
+#: src/recept.c:322
+msgid "Confirmation box"
+msgstr "Bestätigungsfeld"
+
+#: src/recept.c:332
+#, c-format
+msgid "LINPOPUP MESSAGE #%i \n"
+msgstr "LINPOPUP NACHRICHT #%i \n"
+
+#: src/recept.c:339
+msgid "LINPOPUP MESSAGE\n"
+msgstr "LINPOPUP NACHRICHT\n"
+
+#: src/recept.c:348
+#, c-format
+msgid ""
+"\n"
+"Can not write %s!"
+msgstr ""
+"\n"
+"Kann %s nicht schreiben!"
+
+#: src/recept.c:377
+msgid "Save Message..."
+msgstr "Nachricht speichern..."
+
+#: src/recept.c:474
+msgid "Confirm for deletion"
+msgstr "Löschen bestätigen"
+
+#: src/recept.c:474
+msgid ""
+"\n"
+"Do you really want\n"
+"delete ALL messages?"
+msgstr ""
+"\n"
+"Möchten Sie wirklich\n"
+"ALLE Nachrichten löschen?"
+
+#: src/version.c:39
+#, c-format
+msgid ""
+"LINPOPUP V%s - (c)LittleIgloo.org 1998-%s.\n"
+"Compiled by %s on %s the %s at %s,\n"
+"Using %s and %s."
+msgstr ""
+"LINPOPUP V%s - (c)LittleIgloo.org 1998-%s.\n"
+"Kompiliert von %s auf %s dem %s um %s,\n"
+"Benutzt %s und %s."

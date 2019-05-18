@@ -1,0 +1,206 @@
+LINPOPUP - A Linux enhanced port of Winpopup
+============================================
+
+
+(Please read ALL of this file as it gives important information
+about the configuration and use of Linpopup.)
+
+
+INSTALLATION
+=============
+
+NOTE : Linpopup was only tested under Linux, but it may run
+under other Unices. Successful reports are welcome.
+
+
+You *MUST* have root privileges to INSTALL LinPopUp
+and edit the smb.conf as described in STEP #2.
+
+But it's *NOT* necessary to have root privileges
+to use LinPopUp. 
+
+
+
+STEP #1 : Building Linpopup
+---------------------------
+( Only required if you have the source distribution.
+  If you have the binary distribution you can jump to step #2)
+
+>>> You need to have installed GTK version 1.2.0 or better <<<
+- GTK can be found at : ftp://ftp.gtk.org/pub/gtk 
+- Look  for any information about GTK at : http://www.gtk.org
+- To know what version of GTK you have installed:
+   % gtk-config --version
+
+To build Linpopup:
+`cd' to the directory containing the package's source code and type:
+% make
+
+This will start the compilation process. Note that gcc may report some
+warnings. Don't worry about them. Only worry if gcc returns an error code.
+
+At this step you can verify that a LinPopUp excutable have been created 
+by typing :
+% ls
+
+You can even launch it (if X-Windows is running) by typing :
+% ./LinPopUp
+(at this stage you will only be able to send messages)
+
+
+
+STEP #2 : Installing Linpopup
+-----------------------------
+
+Type :
+% make install
+
+Note that you can uninstall it at any moment by typing:
+% make uninstall
+
+(By default, LinPopUp will be installed to /usr/local/bin
+ But if you got the RedHat or Debian Package, 
+ it will be installed in /usr/bin ) 
+
+
+*IMPORTANT*
+-----------
+To be able to receive messages that are sent to you, you will need to
+edit the smb.conf file (generally found in /etc directory) and to add
+this line to the [global settings] section:
+
+message command = /usr/local/bin/LinPopUp "%f" "%m" %s; rm %s
+
+PLEASE NOTE that "%f" is not the same thing as %f , '%f' or `%f`
+and take care to enter "%f" "%m" %s exactly as shown above
+You may change the path to where is located LinPopUp,
+You may remove the rm %s command that follows the LinPopUp command,
+BUT YOU MUST ENTER "%f" "%m" %s
+
+-----------------------------------------------------------------------------
+BTW, THE ONLY BAD THING THAT CAN HAPPEN TO YOU IF YOU ENTER A WRONG 
+MESSAGE COMMAND IS THAT YOU WILL NOT BE ABLE TO RECEIVE SOME 
+(ONLY A FEW, IN FACT) OF THE MESSAGES THAT ARE SENT TO YOU. 
+( See at STEP #4 to understand why )
+-----------------------------------------------------------------------------
+
+For more information about smb.conf and the message command you can type:
+% man smb.conf
+
+
+
+STEP #3 : running LinPopUp
+--------------------------
+
+>>> You need to have Samba installed  <<<
+- Samba can be found at : ftp://ftp.samba.org
+- Look for any Information about Samba at : http://www.samba.org
+
+Run Linpopup like any other X-Windows program. No argument is required. 
+
+But you can use the -min argument to start LinPopUp minimized
+
+So a good idea is to add this line to your .Xclient or .xinitrc file :
+LinPopUp -min &
+But if you don't know what these files are, don't worry about it, it is
+not necessary.
+
+
+
+STEP #4 : understanding how it works (not necessary)
+----------------------------------------------------
+
+How LinPopUp sends message is very easy to understand :
+It simply calls smbclient - which is a part of the Samba package - with
+the -M argument telling it to whom and what message send.
+(more info : % man smbclient)
+
+
+Understanding how it receives messages is a bit more complicated :
+When the Samba daemon receives a message it will execute
+the message command specified in smb.conf :
+
+/usr/local/bin/LinPopUp "%f" "%m" %s
+
+where %f is the sender's name, %m the name of the sender's computer
+and %s the name of a temp file containing the message text. 
+ 
+When called in this way ( with 3 arguments ) LinPopUp will start,
+( or a new session will be launched if it is already running )
+store the message, and immediately exit.
+Because it will not attempt to use any X-Windows display, it can do
+everything that it has to do ( store the message ) even
+when X-Windows is not running. This is why you can receive
+messages even if X-Windows is not actually working.
+
+
+
+WHY PUTTING %f and %m BETWEEN "" IS IMPORTANT?
+----------------------------------------------
+In brief: because spaces that can be in the sender's name (%f)
+or in the sender's machine name (%m) are interpreted as additional
+arguments.
+
+Suppose that JOHN DOE is working on MY COMPUTER and sends you
+a message,
+
+If the message command in smb.conf is : 
+    LinPopUp %f %m %s
+LinPopUp will be launched like this : 
+    LinPopUp JOHN DOE MY COMPUTER message_filename
+and will stupidly believe that JOHN is the sender, 
+DOE the sender's computer name, MY is the file containing the message text. 
+And because the file MY doesn't exist, it will not deliver any message.
+
+
+But if the message command in smb.conf is : 
+    LinPopUp "%f" "%m" %s
+LinPopUp will be launched like this : 
+    LinPopUp "JOHN DOE" "MY COMPUTER" message_filename
+and will know that JOHN DOE is the sender, MY COMPUTER is the sender's 
+computer name, message_filename is the file containing the message text. 
+And because this file exist, will deliver you the right message.
+
+
+Because the name of the file containing the message text (%s)
+never contains space, it is not necessary to put %s between "". 
+
+
+
+Contact
+=======
+You can get the last LinPopUp version, sources or binaries distribution,
+RedHat or Debian Packages, at : http://www.littleigloo.org
+
+Author can be reached at : jm@littleigloo.org
+
+Comments/suggestions/contribution/anything are welcome.
+
+
+
+How to report bugs
+==================
+
+PLEASE check the BUGS file before reporting a bug.
+
+To report a bug, send mail to : jm@littleigloo.org
+
+In the mail include:
+
+* The version of LinPopUp
+
+* Information about your system. For instance:
+
+   - What version of GTK+
+   - What operating system and version
+   - What message command you have entered in smb.conf
+  (executing "LinPopUp -info" will give you some usefull info)
+  
+  And anything else you think is relevant.
+
+* How to reproduce the bug. 
+
+---------------------------------------------------------------------
+LINPOPUP - By Jean-Marc Jacquet <jm@littleigloo.org>, 
+Copyright (c)1998-1999, Little Igloo Org - http://www.littleigloo.org
+---------------------------------------------------------------------

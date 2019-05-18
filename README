@@ -1,0 +1,57 @@
+LINPOPUP - A Linux enhanced port of Winpopup
+============================================
+
+Now LinPopup2 is maintained by
+Roman Rybalko <roman_rybalko@users.sf.net>,
+Grigory Batalov <grisxa@users.sourceforge.net>.
+Please, post bugs/feqturequests on sf.net:
+http://sourceforge.net/tracker/?group_id=83081
+
+
+Even if now Linpopup is supposed to be stable,
+I will be happy to receive the most feedbacks, 
+bug reports, suggestions, contributions, and 
+whatever you think can help to enhance it ...
+
+You can reach me at : <jm@littleigloo.org>
+
+You can get the last LinPopUp version (sources or binaries distribution
+RPM or DEB packages ) at : http://www.littleigloo.org
+GTK+2 version is  available on it's own website:
+http://linpopup2.sourceforge.net
+
+Jean-Marc.
+
+
+License
+=======
+This software is freely distributable under the GNU public license, a
+copy of which you should have received with this software (in a file
+called COPYING). 
+
+
+Description
+===========
+LinPopUp is a Xwindow graphical port of Winpopup, running over Samba.
+It permits to communicate with a windows computer that runs Winpopup,
+sending or receiving message. ( It also provides an alternative way
+to communicate between Linux computers that run Samba). 
+
+Note that LinPopUp is not only a port, 
+as it includes several enhanced features like : 
+
+       Doesn't need to always run :
+       If you close it, it will continue to receive all messages that are 
+       send to you. You can even quit Xwindow, and still receive messages.
+       In fact, the only way to miss a message that was sent to you is 
+       to have your computer turned off. 
+
+       Messages are kept from session to session.
+       You will always retrieve a message that was sent to you, 
+       ... if you have not deleted it. 
+
+       Can be run minimized :
+       It will raise automatically each time a new message arrives. 
+
+       And other features like :
+       Possibility to reply to a message, clipboard cut & past, etc.

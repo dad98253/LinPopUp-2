@@ -1,0 +1,38 @@
+/* XPM */
+static char *right_16[] = {
+/* width height num_colors chars_per_pixel */
+"    24    24        7            1",
+/* colors */
+". c #676767",
+"# c #868686",
+"a c #a8a8a8",
+"b c #d8d8d8",
+"c c #efefef",
+"d c None",
+"e c #000000",
+/* pixels */
+"dddddddddddddddddddddddd",
+"dddddddddddddddddddddddd",
+"dddddddddddddddddddddddd",
+"dddddddddddddddddddddddd",
+"dddddddddddddddddddddddd",
+"dddddddddddddedddddddddd",
+"ddddddddddddde.ddddddddd",
+"dddddddddddddec.dddddddd",
+"dddddddddddddebc.ddddddd",
+"ddddde.......ebbc.dddddd",
+"ddddde#bcbbcbcbabc.ddddd",
+"ddddde#aaaaaaaaaabc.dddd",
+"ddddde#########aa#eddddd",
+"dddddeeeeeeeee#a#edddddd",
+"ddddddddddddde##eddddddd",
+"ddddddddddddde#edddddddd",
+"dddddddddddddeeddddddddd",
+"dddddddddddddedddddddddd",
+"dddddddddddddddddddddddd",
+"dddddddddddddddddddddddd",
+"dddddddddddddddddddddddd",
+"dddddddddddddddddddddddd",
+"dddddddddddddddddddddddd",
+"dddddddddddddddddddddddd"
+};
