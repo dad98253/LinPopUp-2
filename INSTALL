@@ -31,9 +31,18 @@ STEP #1 : Building Linpopup
 - Look  for any information about GTK at : http://www.gtk.org
 - To know what version of GTK you have installed:
    % gtk-config --version
+- To install on ubuntu 18.04, try apt-get install the following packages:
+   libgtk2.0-dev libxmu-headers libxmu-dev libcanberra-gtk-module
 
 To build Linpopup:
-`cd' to the directory containing the package's source code and type:
+`cd' to the directory containing the this file and type:
+% ./configure
+Note that on ubuntu 18.04, you may need to maually tweak the Makefile located in src:
+add the following:
+add LIBS = -lX11    (just after the LIBOBJS = line)
+add FLAGS = -L /lib64      (if you are running the 64 bit version) just after the CFLAGS = -g -O2 line
+
+Next, 'cd' into the src directory and type:
 % make
 
 This will start the compilation process. Note that gcc may report some
