@@ -62,20 +62,29 @@ Note that you can uninstall it at any moment by typing:
  But if you got the RedHat or Debian Package, 
  it will be installed in /usr/bin ) 
 
+Note that linpopup by default will store messages in the folder /usr/local/var/linpopup.
+On modern ubuntu installations, you may need to create thsi folder. Be sure that linpopup
+can write to it.
+
 
 *IMPORTANT*
 -----------
 To be able to receive messages that are sent to you, you will need to
-edit the smb.conf file (generally found in /etc directory) and to add
+edit the smb.conf file (generally found in /etc/samba directory) and to add
 this line to the [global settings] section:
 
-message command = /usr/local/bin/LinPopUp "%f" "%m" %s; rm %s
+message command =  sh -c '/usr/local/bin/LinPopUp "%f" "%m" %s; rm %s' &
 
 PLEASE NOTE that "%f" is not the same thing as %f , '%f' or `%f`
 and take care to enter "%f" "%m" %s exactly as shown above
 You may change the path to where is located LinPopUp,
 You may remove the rm %s command that follows the LinPopUp command,
 BUT YOU MUST ENTER "%f" "%m" %s
+
+You can verify that sh is installed on your system by entering:
+which sh
+
+(see the smb.conf man page regarding the importance of the "&" at the end of the line)
 
 -----------------------------------------------------------------------------
 BTW, THE ONLY BAD THING THAT CAN HAPPEN TO YOU IF YOU ENTER A WRONG 
